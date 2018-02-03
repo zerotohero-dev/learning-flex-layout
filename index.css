@@ -1,0 +1,33 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  /*
+  flex-basis: 200px == min width if container allows.
+justify-content: flex-start is default;
+
+    flex-direction: row|column; defines main axis
+    default: row
+  */
+}
+
+.search {
+  margin-left: auto;
+}
+
+.container > div {
+  xflex: 1 /* flex-grow flex-shrink flex-basis */
+}
+
+.container > .home {
+  flex: 2;
+  align-self: flex-end;
+}
+
+.container > .logout {
+  flex: 2;
+  align-self: flex-start;
+}
+
